@@ -1,3 +1,4 @@
+'use strict'
 const array1=["HYF","is","the","best"];
 const array2=["class",28,"is","the","best","of","best"];
 console.log(array1.length);

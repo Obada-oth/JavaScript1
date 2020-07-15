@@ -1,3 +1,4 @@
+'use strict'
 let arrThings=[];
 console.log("will return empty square brackets");
 console.log(arrThings);
