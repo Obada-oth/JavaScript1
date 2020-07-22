@@ -1,7 +1,13 @@
+// Grades calculator : produces the percentage and the grade of each student based on score
 function gradeCalculator(score) {
-  let percentage = "(" + (+Math.round((score / 100) * 100) + "%") + ")";
+  let percentage =
+    "(" +
+    (Math.round((score / 100) * 100) + "%") +
+    ")"; /*declaring the percentage variable and calculating it based on score */
   switch (true) {
-    case score >= 90 && score <= 100:
+    case score >= 90 &&
+      score <=
+        100 /* evaluates the score against different ranges and returns a grade*/:
       return (grade = "A " + percentage);
 
     case score >= 80 && score <= 89:
@@ -20,4 +26,6 @@ function gradeCalculator(score) {
   }
 }
 
-console.log(`You got a ${gradeCalculator(54)}!`);
+console.log(
+  `You got a ${gradeCalculator(54)}!`
+); /*logs a template string that includes the grade and the percentage*/
