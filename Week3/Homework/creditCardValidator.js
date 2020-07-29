@@ -7,14 +7,15 @@ function validateCreditCard(num) {
   }
 
   if (
-    typeof num == "number" &&
-    num.toString().length == 16 &&
+    !isNaN(num) &&
+    stringNum.length == 16 &&
     summedDigits > 16 &&
     (num % 10) % 2 == 0
   ) {
     return "success!";
   } else {
-    return "invalid";
+    return "invalidoo";
   }
 }
-console.log(validateCreditCard());
+
+console.log(validateCreditCard("1111111111166001"));
