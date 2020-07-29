@@ -13,7 +13,6 @@ for (let i = 0; i < 5; i++) {
     /*When the count is equal to 2 start adding the next drink type */
     j++;
   }
-  console.log(count);
 }
 
-console.log(drinkTray);
+console.log(`Hey Guys! I bought a ${drinkTray}!"`);
